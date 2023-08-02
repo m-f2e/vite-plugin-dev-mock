@@ -56,7 +56,7 @@ const matchRoute = (req: IncomingMessage) => {
 }
 
 const VitePluginDevMock = (options?: UserOptions) => {
-  let entry = options?.entry || './mock/index.ts'
+  let entry = options?.entry || './mock/index.js'
 
   // 没有绝对路径转为绝对路径
   if (!path.isAbsolute(entry)) {

@@ -1,3 +1,7 @@
+const books = require('./book')
+const toys = require('./toys')
+const routeModules = [ books, toys ]
+
 const apiRoutes = [
   {
     url: '/api/users',
@@ -13,5 +17,12 @@ const apiRoutes = [
     }
   }
 ]
+
+for (const routeModule of routeModules) {
+  for (const routeKey in routeModule) {
+    apiRoutes.push(routeModule[routeKey])
+  }
+}
+console.log('$---', apiRoutes);
 
 module.exports = apiRoutes
