@@ -1,4 +1,3 @@
-
 exports.books = {
   url: '/api/books',
   type: 'get',
