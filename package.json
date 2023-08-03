@@ -29,6 +29,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-f2e/vite-plugin-dev-mock.git"
+  },
   "publishConfig": {
     "access": "public"
   },
